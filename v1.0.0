@@ -1,0 +1,6 @@
+if getgenv().CadeHubLoaded ~= true then
+    getgenv().CadeHubLoaded = true
+   loadstring(game:HttpGet("https://github.com/l0ckerV5/CadeHub/raw/main/Source/v1.0.0"))()
+else
+    game.StarterGui:SetCore("SendNotification",  { Title = "CadeHub"; Text = "CadeHub is already executed!"; Icon = "rbxassetid://18634360365"; Duration = 15; })
+end
